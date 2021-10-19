@@ -1,0 +1,223 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "gwynedd mercy",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "EventsIntent",
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": [
+                "a week from today",
+                "october first twenty twenty",
+                "october first",
+                "next monday",
+                "tomorrow",
+                "today",
+                "friday",
+                "thursday",
+                "wednesday",
+                "tuesday",
+                "monday"
+              ]
+            }
+          ],
+          "samples": [
+            "events {date}",
+            "what\u0027s happening {date}",
+            "whats happening {date}",
+            "calendar {date}",
+            "schedule {date}",
+            "schedule for {date}",
+            "schedule on {date}",
+            "events on {date}",
+            "whats happening on {date}",
+            "what\u0027s happening on {date}",
+            "calendar on {date}",
+            "calendar for {date}",
+            "events",
+            "schedule",
+            "calendar",
+            "whats on the schedule",
+            "whats on the calendar",
+            "what\u0027s on the calendar",
+            "whats happening"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "MenuIntent",
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": [
+                "a week from today",
+                "tuesday",
+                "monday",
+                "tomorrow",
+                "today"
+              ]
+            }
+          ],
+          "samples": [
+            "the menu {date}",
+            "what\u0027s for lunch on {date}",
+            "what\u0027s for lunch {date}",
+            "whats on the menu for {date}",
+            "whats on the menu {date}",
+            "what\u0027s on the menu for {date}",
+            "what\u0027s on the menu {date}",
+            "lunch on {date}",
+            "lunch {date}",
+            "whats for lunch {date}",
+            "food {date}",
+            "food on {date}",
+            "whats for lunch on {date}",
+            "menu on {date}",
+            "menu {date}",
+            "whats for lunch",
+            "what\u0027s for lunch",
+            "menu",
+            "lunch",
+            "food"
+          ]
+        },
+        {
+          "name": "SportsIntent",
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": [
+                "a week from today",
+                "october first twenty twenty",
+                "october first",
+                "next monday",
+                "tomorrow",
+                "today",
+                "friday",
+                "thursday",
+                "wednesday",
+                "tuesday",
+                "monday"
+              ]
+            }
+          ],
+          "samples": [
+            "athletics {date}",
+            "athletics on {date}",
+            "games {date}",
+            "games on {date}",
+            "sports {date}",
+            "sports on {date}",
+            "games",
+            "athletics",
+            "sports"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "MenuIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1217458059148.754018610498"
+              }
+            }
+          ]
+        },
+        {
+          "name": "SportsIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.122107061396.1410578080210"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EventsIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.612925299163.712342548622"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1217458059148.754018610498",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "On which date?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.122107061396.1410578080210",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "On which date?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.612925299163.712342548622",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "On which date?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "32"
+}

@@ -1,0 +1,4 @@
+boto3==1.9.216
+ask-sdk-core==1.11.0
+icalendar==4.0.7
+urllib3==1.25.9

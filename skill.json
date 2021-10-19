@@ -1,0 +1,72 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Gwynedd Mercy Academy Elementary School Calendar",
+          "examplePhrases": [
+            "Alexa open Gwynedd Mercy.",
+            "Alexa ask Gwynedd Mercy what\u0027s happening on Friday.",
+            "Alexa ask Gwynedd Mercy what\u0027s happening on Monday."
+          ],
+          "keywords": [
+            "GMA",
+            "Gwynedd",
+            "Mercy"
+          ],
+          "name": "Gwynedd Mercy Academy Elementary",
+          "description": "Start your day off right! Find out what day it is and what\u0027s going on at school so you can help your kids plan their day.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Ask my school what\u0027s on the menu, the school calendar, or the athletic calendar for any particular day.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": [
+        "US"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:055604356619:function:1e506af3-e1c5-4077-8588-485a1225af21:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:055604356619:function:1e506af3-e1c5-4077-8588-485a1225af21:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:055604356619:function:1e506af3-e1c5-4077-8588-485a1225af21:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:055604356619:function:1e506af3-e1c5-4077-8588-485a1225af21:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "https://edalatpour.wordpress.com/gma-bot-privacy-policy/"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
